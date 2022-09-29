@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+body,ul,h1,h2,h3,p,fieldset,input{padding:0;margin:0;}
+ul,li{list-style: none;}
+address{font-style:normal;}
+fieldset{border:0;}
+input,button,img{vertical-align:top;}
+button{border:none;padding:0;}
+hr{background-color: #454545;}
+.hide{
+    text-indent:-9999px;
+    font-size:0;line-height: 0;opacity:0;
+    position:absolute;top:-9999px ;left:9999px;
+    width:0;height:0;
+}
+a{text-decoration: none;color:#424242;}

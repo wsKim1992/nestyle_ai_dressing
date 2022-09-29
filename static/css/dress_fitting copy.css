@@ -1,0 +1,372 @@
+@charset "utf-8";
+
+html,body{width:100%;height:100%;position: relative;}
+
+#entire_con{
+    width:1600px;height:auto;
+    margin:0 auto;
+}
+
+#entire_con .wrap{
+    height:auto;
+    margin:0 auto;
+}
+
+#entire_con #entire_wrap{
+    width:1044px;
+}
+
+#entire_con #entire_wrap #header_con{
+    width:100%;height:auto;
+}
+
+#entire_con #entire_wrap #header_con #header_wrap{
+    width:1044px;
+}
+
+#entire_con #entire_wrap #header_con #header_wrap #title{
+    width:100%;height:40px;
+    line-height:40px;text-align:center;
+    font-size:36px;padding:20px;
+}
+#entire_con #entire_wrap #header_con #header_wrap #subtitle{
+    width:100%;height:40px;
+    line-height: 20px;font-size:12px;
+    text-align:center;
+}
+
+#entire_con #entire_wrap #content_con{
+    width:100%;height:auto;
+}
+#entire_con #entire_wrap #content_con #content_wrap{
+    width:100%;overflow:hidden;
+}
+#entire_con #entire_wrap #content_con #content_wrap::after{
+    content:"";
+    display:block;
+    width:100%;height:1px;
+}
+
+#entire_con #entire_wrap #content_con #models_con{
+    width:320px;height:532px;
+    float:left;
+}
+
+#entire_con #entire_wrap #content_con #models_con #models_wrap{
+    width:320px;height:532px;
+}
+
+#entire_con #entire_wrap #content_con #models_con #models_wrap ul{ 
+    width:320px;height:532px;
+    overflow-y:scroll;
+}
+#entire_con #entire_wrap #content_con #models_con #models_wrap ul li{
+    width:150px;height:200px;
+    float:left;
+}
+#entire_con #entire_wrap #content_con #models_con #models_wrap ul li img{
+    display:block;width:140px;
+    height:190px;padding:5px;
+    object-fit: contain;
+}
+#entire_con #entire_wrap #content_con #models_con #models_wrap ul li img.on{
+    padding:0px;border:5px solid #000000;
+}
+
+#entire_con #entire_wrap #content_con #main_pic_con{
+    width:404px;height:532px;
+    float:left;position:relative;
+}
+
+#entire_con #entire_wrap #content_con #main_pic_con #loading_pic_wrap{
+    width:384px;height:512px;
+    position: absolute;
+    top:0;left:0;display:none;
+}
+#entire_con #entire_wrap #content_con #main_pic_con #loading_pic_wrap>img{
+    display:block;width:384px;height:512px;
+}
+#entire_con #entire_wrap #content_con #main_pic_con #loading_pic_wrap #progress_msg{
+    width:220px; height:30px;
+    line-height: 30px;font-size:18px;
+    position: absolute;
+    top:30%;left:50%;
+    margin-left:-110px;
+    display:none;
+}
+
+#entire_con #entire_wrap #content_con #main_pic_con #loading_pic_wrap #progressBar_wrap{
+    width : 220px;height:30px;
+    position: absolute;top:20%;left:50%;
+    margin-left: -110px;
+    border-radius:5px;
+    border : 1px solid #454545;
+    user-select: none;
+    display:none;
+}
+#entire_con #entire_wrap #content_con #main_pic_con #loading_pic_wrap #progressBar_wrap>#progressBar{
+    width:0;height:28px;
+    /* user-select: none; */
+    background-color: #3CB371;
+    border-radius:5px;
+}
+
+#entire_con #entire_wrap #content_con #main_pic_con #loading_pic_wrap #cancel{
+    width:120px;height:30px;
+    line-height: 30px;
+    text-align:center;
+    position:absolute;top:462px;left:50%;
+    margin-left: -60px;
+    border-radius:10px;
+    background-color:#DCBC7B;
+    border:none;
+    outline: none;
+}
+
+#entire_con #entire_wrap #content_con #main_pic_con #main_pic_wrap{
+    width:384px;height:512px;
+    position: relative;
+}
+
+#entire_con #entire_wrap #content_con #main_pic_con #main_pic_wrap>input{display:none;}
+
+#entire_con #entire_wrap #content_con #main_pic_con #main_pic_wrap label{
+    display:block; width:48px; height:48px;
+    line-height: 50px;font-size:30px;
+    position: absolute;top :10px; right:10px;
+    text-align:center; 
+    border:2px solid black;
+    border-radius: 2px;
+}
+#entire_con #entire_wrap #content_con #main_pic_con #main_pic_wrap label:nth-child(2){
+    top :65px; right:10px;
+}
+
+#entire_con #entire_wrap #content_con #main_pic_con #main_pic_wrap #file{
+    display:none;
+}
+
+#entire_con #entire_wrap #content_con #main_pic_con #main_pic_wrap img{
+    display:block;width:384px;height:512px;
+}
+#entire_con #entire_wrap #content_con #main_pic_con #main_pic_wrap #dress{
+    width:120px;height:30px;
+    line-height: 30px;
+    text-align:center;
+    position:absolute;top:462px;left:50%;
+    margin-left: -60px;
+    border-radius:10px;
+    background-color: #81c147;
+    border:none;
+    outline: none;
+}
+#entire_con #entire_wrap #content_con #clothes_con{
+    width:320px;height:532px;
+    float:left;
+}
+
+#entire_con #entire_wrap #content_con #clothes_con #clothes_wrap{
+    width:320px;height:532px;
+}
+#entire_con #entire_wrap #content_con #clothes_con #clothes_wrap ul{
+    width: 320px;height:532px;
+    overflow-y: scroll;
+}
+#entire_con #entire_wrap #content_con #clothes_con #clothes_wrap ul li{
+    width:150px;height:200px;
+    float:left;
+}
+#entire_con #entire_wrap #content_con #clothes_con #clothes_wrap ul li img{
+    display:block;
+    width:140px;height:190px;
+    padding:5px;object-fit:contain;
+}
+#entire_con #entire_wrap #content_con #clothes_con #clothes_wrap ul li img.on{
+    padding:0px;border:5px solid #000000;
+}
+#entire_con #editImg_con{
+    position: absolute;top:0px;left:0px;
+    width:100%;height:100%;
+    background-color: #ffffff;
+    display:none;
+}
+#entire_con #editImg_con #editImg_wrap{
+    width:100%;height:auto;
+    margin:0 auto;
+}
+#entire_con #editImg_con #editImg_wrap>div{
+    margin:0 auto;
+    width:866.645px;height:866.645px;
+    position: relative;
+    background-color: #000000;
+}
+
+#entire_con #editImg_con #editImg_wrap>div>.fa-undo-alt{
+    position: absolute;top:10px; right:10px;
+    display:block; width:50px;height:50px;
+    border-radius:5px;background-color:green;
+    cursor:pointer;line-height: 50px;z-index:10000;
+    text-align:center;font-size:30px;
+}
+
+#entire_con #editImg_con #editImg_wrap>div>#editImg{
+    display:block;width:100%;height:100%;
+    margin:0 auto;
+}
+
+#entire_con #editImg_con #editImg_wrap>div>.jcrop-holder{
+    margin:0 auto;
+}
+
+#entire_con #editImg_con #editImg_wrap>div>button{
+    position: absolute;
+    display:block;height:50px;width:50px;
+    background-color: green;
+    border-radius:5px;line-height: 50px;
+    z-index:10000;cursor:pointer;
+    margin-left:-15px;font-size:30px;
+}
+
+#entire_con #editImg_con #editImg_wrap>div>#cutBtn{
+    bottom:10px;left:50%;
+}
+
+#entire_con #editImg_con #editImg_wrap>div>#plueBtn{
+    bottom:10px;left:25%;
+}
+
+#entire_con #editImg_con #editImg_wrap>div>#minusBtn{
+    bottom:10px;left:75%;
+}
+/* #entire_con #editImg_con #editImg_wrap>div>#resizeBtn{
+    bottom:10px;left:80%;
+} */
+
+@media(max-width:800px){
+    html,body{width:100%;height:100%;}
+
+    #entire_con{
+        width:400px;height:auto;
+        margin:0 auto;
+    }
+
+    #entire_con .wrap{}
+
+    #entire_con #entire_wrap{
+        width:400px;
+    }
+
+    #entire_con #entire_wrap #header_con{width:400px;}
+
+    #entire_con #entire_wrap #header_con #header_wrap{
+        width:400px;margin:0 auto;
+    }
+
+    #entire_con #entire_wrap #header_con #header_wrap #title{
+        width:400px;height:40px;
+        line-height:40px;text-align:center;
+        font-size:19.8px;padding-bottom:5.5px;
+        margin:0 auto;
+    }
+    #entire_con #entire_wrap #header_con #header_wrap #subtitle{
+        width:400px;height:22px;
+        line-height: 11px;font-size:6.5px;
+        text-align:center;
+        margin:5px auto;
+    }
+
+    #entire_con #entire_wrap #content_con{}
+    #entire_con #entire_wrap #content_con #content_wrap{}
+    #entire_con #entire_wrap #content_con #content_wrap::after{}
+
+    #entire_con #entire_wrap #content_con #models_con{
+        width:404px;height:132px;
+        float:none;margin-bottom:10px;
+    }
+
+    #entire_con #entire_wrap #content_con #models_con #models_wrap{
+        width:384px;height:132px;
+        margin:0 auto;
+    }
+
+    #entire_con #entire_wrap #content_con #models_con #models_wrap ul{ 
+        width:384px;height:132px;
+        overflow:hidden;
+    }
+    #entire_con #entire_wrap #content_con #models_con #models_wrap ul li{
+        width:96px;height:128px;
+        float:left;
+    }
+    #entire_con #entire_wrap #content_con #models_con #models_wrap ul li img{
+        display:block;width:92px;
+        height:124px;padding:1px;
+        object-fit: contain;
+    }
+    #entire_con #entire_wrap #content_con #models_con #models_wrap ul li img.on{
+        padding:0px;border:1px solid #000000;
+    }
+
+    #entire_con #entire_wrap #content_con #main_pic_con{
+        width:404px;height:532px;
+        float:none;
+    }
+
+    #entire_con #entire_wrap #content_con #main_pic_con #main_pic_wrap{
+        width:404px;height:532px;
+        position:relative;
+    }
+
+    #entire_con #entire_wrap #content_con #main_pic_con #main_pic_wrap>input{display:none;}
+
+    #entire_con #entire_wrap #content_con #main_pic_con #main_pic_wrap label{
+        display:block; width:26px; height:26px;
+        line-height: 30px;font-size:13px;
+        position: absolute;top :15px; right:15px;
+        text-align:center; 
+        border:2px solid black;
+        border-radius: 15px;
+    }
+    #entire_con #entire_wrap #content_con #main_pic_con #main_pic_wrap label:nth-child(2){
+        top :65px; right:15px;
+    }
+
+    #entire_con #entire_wrap #content_con #main_pic_con #main_pic_wrap img{
+        display:block;width:384px;height:512px;margin:10px;
+    }
+
+    #entire_con #entire_wrap #content_con #clothes_con{
+        width:404px;height:132px;
+        float:none;
+    }
+
+    #entire_con #entire_wrap #content_con #clothes_con #clothes_wrap{
+        width:384px;height:132px;
+        margin:0 auto;
+    }
+    #entire_con #entire_wrap #content_con #clothes_con #clothes_wrap ul{
+        width:100%;height:100%;
+        overflow:hidden;
+    }
+    #entire_con #entire_wrap #content_con #clothes_con #clothes_wrap ul li{
+        width:96px;height:128px;
+        float:left;
+    }
+    #entire_con #entire_wrap #content_con #clothes_con #clothes_wrap ul li img{
+        display:block;
+        width:92px;height:124px;
+        padding:1px;object-fit:contain;
+    }
+    #entire_con #entire_wrap #content_con #clothes_con #clothes_wrap ul li img.on{
+        padding:0px;border:1px solid #000000;
+    }
+
+    #entire_con #entire_wrap #editImg_con{
+        width:100%;height:100%;
+        background-color: #ffffff;
+        display:none;
+    }
+    
+    #entire_con #entire_wrap #editImg_con #editImg{
+        display:block; height:100%;width:100%;
+    }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html charset="ko">
+<head>
+<meta charset="UTF-8">
+    <title>Nestyle Virtual Try-on</title>
+    <link rel="stylesheet" href="/static/css/dress_fitting.css?v=1.3">
+	<link rel="stylesheet"  href="/static/css/reset.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link type="text/css" rel="stylesheet" href="/static/js/Jcrop/JcropDoc/css/jquery.Jcrop.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Compatible" content="no-cache"/>
+</head>
+
+<body>
+    <section id="entire_con">
+        <div id="entire_wrap" class="wrap">
+            <div id="header_con">
+                <div id="header_wrap" clas="wrap">
+                    <h1 id="title">Virtual Try-on clothes</h1>
+                    <p id="subtitle">
+                        Experiment with the latest fashion trends. 
+                        Wear multiple clothes at once and
+                        realistically see the effect on your style.
+                    </p>
+                </div><!-- header_wrap ends here -->
+            </div><!-- header_con -->
+            <div id="content_con">
+                <div id="content_wrap" class="wrap">
+                    <div id="models_con">
+                        <div id="models_wrap" class="wrap">
+                            <ul>
+                                <li><img class="on" display-mode="sample" src="./static/img-sample-new/model/model01.jpg"/></li>
+                                <li><img display-mode="sample" src="./static/img-sample-new/model/model02.jpg"/></li>
+                                <li><img display-mode="sample" src="./static/img-sample-new/model/model03.jpg"/></li>
+                                <li><img display-mode="sample" src="./static/img-sample-new/model/model04.jpg"/></li>
+                                <li><img display-mode="sample" src="./static/img-sample-new/model/model05.jpg"/></li>
+                                <li><img display-mode="sample" src="./static/img-sample-new/model/model06.jpg"/></li>
+                                <li><img display-mode="sample" src="./static/img-sample-new/model/model07.jpg"/></li>
+                                <li><img display-mode="sample" src="./static/img-sample-new/model/model08.jpg"/></li>
+                                <li><img display-mode="sample" src="./static/img-sample-new/model/model09.jpg"/></li>
+                            </ul>
+                        </div><!-- models_wrap -->
+                    </div><!-- models_con ends -->
+
+                    <div id="main_pic_con">
+                        <div id="main_pic_wrap" class="wrap">
+                            <img src="./static/img-sample-new/result/model01_cloth01.jpg"/>
+                            <label for="modelPic"><i class="fas fa-male"></i></label>
+                            <input id="modelPic" type="file"/>
+                            <label for="dressPic"><i class="fas fa-tshirt"></i></label>
+                            <input id="dressPic" type="file"/>
+                            <!-- <div id = "progressBar_wrap">  
+                                <p id="progressBar"></p>
+                            </div> -->
+                            <button id="dress">
+                                try-virtual-fitting
+                            </button>
+                        </div><!-- main_pic_wrap -->
+                        
+                    </div><!-- main_pic_con ends -->
+
+                    <div id="clothes_con">
+                        <div id="clothes_wrap" class="wrap">
+                            <ul>
+                                <li><img display-mode="sample" src="./static/img-sample-new/cloth/cloth01.jpg" class="on"/></li>
+                                <li><img display-mode="sample" src="./static/img-sample-new/cloth/cloth02.jpg" /></li>
+                                <li><img display-mode="sample" src="./static/img-sample-new/cloth/cloth03.jpg" /></li>
+                                <li><img display-mode="sample" src="./static/img-sample-new/cloth/cloth04.jpg" /></li>
+                                <li><img display-mode="sample" src="./static/img-sample-new/cloth/cloth05.jpg"/></li>
+                                <li><img display-mode="sample" src="./static/img-sample-new/cloth/cloth06.jpg"/></li>
+                                <li><img display-mode="sample" src="./static/img-sample-new/cloth/cloth07.jpg"/></li>
+                                <li><img display-mode="sample" src="./static/img-sample-new/cloth/cloth08.jpg"/></li>
+                                <li><img display-mode="sample" src="./static/img-sample-new/cloth/cloth09.jpg"/></li>
+                                <li><img display-mode="sample" src="./static/img-sample-new/cloth/cloth10.jpg"/></li>
+                                <li><img display-mode="sample" src="./static/img-sample-new/cloth/cloth11.jpg"/></li>
+                            </ul>
+                        </div><!-- clothes_wrap -->
+                    </div><!-- clothes_con ends -->
+                </div><!-- content_wrap ends -->
+                
+            </div><!-- content_con ends -->
+        </div><!-- entire_wrap ends here -->
+        <div id="editImg_con">
+            <div id="editImg_wrap" class="wrap">
+                <div>
+                    <i class="fas fa-undo-alt"></i>
+                    <img src="#" id="editImg"/>
+                    <button id="cutBtn">
+                        <i class="fas fa-check"></i>
+                    </button>
+                    <button id="plueBtn" class="resize_btn">
+                        <i class="far fa-plus-square"></i>
+                    </button>
+                    <button id="minusBtn" class="resize_btn">
+                        <i class="far fa-minus-square"></i>
+                    </button>
+                    <!-- <button id="resizeBtn" class="resize_btn">
+                        <i class="fas fa-crop-alt"></i>
+                    </button> -->
+                </div>
+            </div>
+            <input type="hidden" id="xAxis" value="0" placeholder="선택영여역의_x좌표"/>
+	        <input type="hidden" id="yAxis" value="0" placeholder="선택영여역의_y좌표"/>
+	        <input type="hidden" id="wLength" value="0" placeholder="선택영여역의_w넓이"/>
+            <input type="hidden" id="hLength" value="0" placeholder="선택영여역의_h높이"/>
+            
+        </div><!-- editImg_con ends here -->
+    </section>
+    
+<script src="./static/js/jquery.js"></script>
+<script type="text/javascript" src="/static/js/Jcrop/JcropDoc/js/jquery.Jcrop.min.js"></script>
+<!-- <script src="https://docs.opencv.org/master/opencv.js"></script> -->
+<script type="text/javascript" src="./static/js/dress_fitting.js?v=1.2"></script>
+
+</body>
+</html>
